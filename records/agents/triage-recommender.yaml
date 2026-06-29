@@ -1,0 +1,28 @@
+id: triage-recommender
+name: Triage Recommender
+type: Agent
+category: Work management
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: triage-recommender-c01
+    statement: Run the six-outcome cascade against a signed-off, stack-checked request and recommend an approach
+    support: native
+    data_sensitivity: Internal
+  - id: triage-recommender-c02
+    statement: Produce a costable short list of 1-4 named, route-typed options for the cost agent
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/triage-recommender_v1_0.md
+model_tier: large/frontier
+run_cost: "~20k-80k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (analysis-stage triage), prompt v1.1.0 (file stem reads
+  v1_0). origin 'built-via-workflow' is the registry's only Agent-origin value, not
+  an external build; source_ref points at the prompt artifact.

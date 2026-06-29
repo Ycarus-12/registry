@@ -1,0 +1,24 @@
+id: stack-check
+name: Stack-Check Agent
+type: Agent
+category: Data/analytics
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: stack-check-c01
+    statement: Search the capability registry against a signed-off request to find existing tooling or agents that cover the need
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-26"
+source_ref: Ycarus-12/agent_builder_workflow:agents/stack-check_v1_0.md
+model_tier: mid
+run_cost: "~5k-20k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (second stage, registry reuse check), prompt v1.0.0.
+  origin 'built-via-workflow' is the registry's only Agent-origin value, not an
+  external build; source_ref points at the prompt artifact.

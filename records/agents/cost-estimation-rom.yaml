@@ -1,0 +1,24 @@
+id: cost-estimation-rom
+name: Cost Estimation — ROM
+type: Agent
+category: Finance
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: cost-estimation-rom-c01
+    statement: Produce rough-order-of-magnitude cost bands (effort, run-cost, license, maintenance) per costable option
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/cost-estimation-rom_v1_1.md
+model_tier: SLM
+run_cost: "~1k-5k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (analysis-stage cost, ROM mode), prompt v1.1.0. origin
+  'built-via-workflow' is the registry's only Agent-origin value, not an external
+  build; source_ref points at the prompt artifact.

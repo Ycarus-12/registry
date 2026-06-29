@@ -1,0 +1,28 @@
+id: security-governance
+name: Security Agent — Governance
+type: Agent
+category: Dev/engineering
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+  - Customer
+  - Financial
+  - Regulated
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: security-governance-c01
+    statement: Review a build's data handling, access scope, isolation, and regulated-data rules against the governance standard
+    support: native
+    data_sensitivity: Regulated
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/security-governance_v1_0.md
+model_tier: large/frontier
+run_cost: "~20k-80k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (post-QA security, data-governance lens), prompt v1.0.0.
+  Cleared for sensitive data because it reviews regulated-data handling by design.
+  origin 'built-via-workflow' is the registry's only Agent-origin value, not an
+  external build; source_ref points at the prompt artifact.

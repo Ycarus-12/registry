@@ -1,0 +1,24 @@
+id: intake-extraction
+name: Intake — Extraction
+type: Agent
+category: Data/analytics
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: intake-extraction-c01
+    statement: Convert a closed intake transcript into a single structured JSON record matching the intake schema
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-25"
+source_ref: Ycarus-12/agent_builder_workflow:agents/intake-extraction_v1_0.md
+model_tier: SLM
+run_cost: "~1k-5k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (intake extraction pass, mechanical single-shot), prompt
+  v1.0.0. origin 'built-via-workflow' is the registry's only Agent-origin value, not
+  an external build; source_ref points at the prompt artifact.

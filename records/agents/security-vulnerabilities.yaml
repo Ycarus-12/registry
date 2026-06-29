@@ -1,0 +1,24 @@
+id: security-vulnerabilities
+name: Security Agent — Vulnerabilities
+type: Agent
+category: Dev/engineering
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: security-vulnerabilities-c01
+    statement: Perform a contextual secure-coding review for issues scanners miss (injection, embedded secrets, auth/authz gaps, unsafe calls)
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/security-vulnerabilities_v1_0.md
+model_tier: large/frontier
+run_cost: "~20k-80k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (post-QA security, vulnerabilities lens), prompt v1.0.0.
+  origin 'built-via-workflow' is the registry's only Agent-origin value, not an
+  external build; source_ref points at the prompt artifact.
