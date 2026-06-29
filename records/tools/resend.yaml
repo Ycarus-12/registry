@@ -1,0 +1,30 @@
+id: resend
+name: Resend
+type: Tool
+category: Comms
+status: Planned
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: resend-c01
+    statement: Send transactional email for gate-decision prompts, route-elsewhere hand-offs, and requestor sign-off and acceptance notices
+    support: native
+    data_sensitivity: Internal
+  - id: resend-c02
+    statement: Receive delivery and event webhooks for sent email
+    support: configurable
+    data_sensitivity: Internal
+cost_basis: usage
+integrations:
+  - REST API
+  - SMTP
+  - Webhooks
+admin: Director
+notes: >
+  All outbound email for the workflow (Director gate prompts, hand-offs, requestor
+  sign-off/acceptance notices). Status 'Planned': not yet wired into a running
+  service. data_cleared_for is provisional (Internal) pending a data-governance
+  sign-off, since email bodies may reference request content.
