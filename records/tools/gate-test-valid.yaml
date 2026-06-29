@@ -1,0 +1,19 @@
+# Gate verification record — intentionally VALID. Used only to prove the
+# registry-validate merge gate passes a well-formed record. Deleted after the test.
+id: gate-test-valid
+name: Gate Test (should pass)
+type: Tool
+category: Work management
+status: In use
+owner: Gate Tester
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: gate-test-valid-c01
+    statement: Placeholder capability used only for gate verification
+    support: native
+    data_sensitivity: Internal
+cost_basis: flat
+notes: Temporary record for branch-protection verification; safe to delete.
