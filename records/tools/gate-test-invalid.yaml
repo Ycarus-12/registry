@@ -1,0 +1,11 @@
+# Gate verification record — intentionally INVALID. Used only to prove the
+# registry-validate merge gate blocks a bad record. Deleted after the test.
+id: gate-test-invalid
+name: Gate Test (should fail)
+type: Tool
+category: CRM
+status: Totally Bogus Status   # not in the status enum
+owner: Gate Tester
+discovery: Manual
+cost_basis: flat
+# Missing required: capabilities, data_cleared_for, last_verified
