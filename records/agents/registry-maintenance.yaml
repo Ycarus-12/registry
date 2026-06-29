@@ -1,0 +1,24 @@
+id: registry-maintenance
+name: Registry Maintenance Agent
+type: Agent
+category: Dev/engineering
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: registry-maintenance-c01
+    statement: Reason over a registry drift report and draft problem-shaped capability statements to keep the registry current
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/registry-maintenance_v1_0.md
+model_tier: mid
+run_cost: "~5k-20k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (registry maintenance, runs outside the request pipeline),
+  prompt v1.0.0. origin 'built-via-workflow' is the registry's only Agent-origin
+  value, not an external build; source_ref points at the prompt artifact.

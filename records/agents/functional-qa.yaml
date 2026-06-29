@@ -1,0 +1,28 @@
+id: functional-qa
+name: Functional QA Agent
+type: Agent
+category: Dev/engineering
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: functional-qa-c01
+    statement: Independently verify a completed build runs and meets its acceptance criteria
+    support: native
+    data_sensitivity: Internal
+  - id: functional-qa-c02
+    statement: Issue a per-criterion functional pass/fail verdict for the build
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/functional-qa_v1_0.md
+model_tier: large/frontier
+run_cost: "~20k-80k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (functional QA stage), prompt v1.0.0. origin
+  'built-via-workflow' is the registry's only Agent-origin value, not an external
+  build; source_ref points at the prompt artifact, not a deployed service.

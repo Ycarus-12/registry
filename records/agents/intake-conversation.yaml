@@ -1,0 +1,28 @@
+id: intake-conversation
+name: Intake — Conversation
+type: Agent
+category: Work management
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: intake-conversation-c01
+    statement: Conduct a live, adaptive interview to capture the underlying problem behind a tool or AI request
+    support: native
+    data_sensitivity: Internal
+  - id: intake-conversation-c02
+    statement: Draft acceptance criteria and reach an explicit requestor sign-off
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-25"
+source_ref: Ycarus-12/agent_builder_workflow:agents/intake-conversation_v1_0.md
+model_tier: mid
+run_cost: "~5k-20k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (first stage, intake interview), prompt v1.0.0. origin
+  'built-via-workflow' is the registry's only Agent-origin value, not an external
+  build; source_ref points at the prompt artifact.

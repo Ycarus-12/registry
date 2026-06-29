@@ -1,0 +1,24 @@
+id: cost-estimation-deepdive
+name: Cost Estimation — Deep-Dive
+type: Agent
+category: Finance
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: cost-estimation-deepdive-c01
+    statement: Produce a detailed per-option cost breakdown with web-sourced USD figures, ranges, and a maintenance forecast
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/cost-estimation-deepdive_v1_0.md
+model_tier: large/frontier
+run_cost: "~20k-80k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (post-Gate-1a cost, deep-dive mode), prompt v1.0.0. origin
+  'built-via-workflow' is the registry's only Agent-origin value, not an external
+  build; source_ref points at the prompt artifact.

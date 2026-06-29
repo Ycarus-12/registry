@@ -1,0 +1,25 @@
+id: portfolio-pattern
+name: Portfolio-Pattern Agent
+type: Agent
+category: Data/analytics
+status: In build
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: portfolio-pattern-c01
+    statement: Label recurring request themes and classify each as a build signal or an enablement signal against registry coverage
+    support: native
+    data_sensitivity: Internal
+origin: built-via-workflow
+built_date: "2026-06-29"
+source_ref: Ycarus-12/agent_builder_workflow:agents/portfolio-pattern_v1_0.md
+model_tier: mid
+run_cost: "~5k-20k tokens/run (estimate)"
+notes: >
+  Internal workflow agent (scheduled batch portfolio advisory), prompt v1.0.0. The
+  recommendation pass is mid-tier; clustering is an upstream embedding step. origin
+  'built-via-workflow' is the registry's only Agent-origin value, not an external
+  build; source_ref points at the prompt artifact.
