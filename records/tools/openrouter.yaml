@@ -1,0 +1,29 @@
+id: openrouter
+name: OpenRouter
+type: Tool
+category: Dev/engineering
+status: In pilot
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: openrouter-c01
+    statement: Route model inference calls through a single provider-neutral gateway via an OpenAI-compatible API
+    support: native
+    data_sensitivity: Internal
+  - id: openrouter-c02
+    statement: Use a team-supplied Anthropic key (BYOK) under a monthly spend cap, single-provider to start
+    support: configurable
+    data_sensitivity: Internal
+cost_basis: usage
+integrations:
+  - REST API (OpenAI-compatible)
+admin: Director
+notes: >
+  Dev/test model-access seam for the provider-neutral gateway: OpenRouter + BYOK
+  (team Anthropic key), cross-provider fallback disabled, $50/mo cap. Operate
+  single-provider (Anthropic) to start; the gateway seam stays provider-agnostic in
+  application code. data_cleared_for is provisional (Internal) — prompts may carry
+  higher-sensitivity request data; clearance pending a data-governance sign-off.

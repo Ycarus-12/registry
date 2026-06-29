@@ -1,0 +1,30 @@
+id: airtable
+name: Airtable
+type: Tool
+category: Data/analytics
+status: Planned
+owner: Director
+data_cleared_for:
+  - Internal
+discovery: Manual
+last_verified: "2026-06-29"
+capabilities:
+  - id: airtable-c01
+    statement: Store and update request records, pipeline state, and gate decisions as the application's operational datastore
+    support: native
+    data_sensitivity: Internal
+  - id: airtable-c02
+    statement: Maintain an append-only audit log of workflow actions and decisions
+    support: native
+    data_sensitivity: Internal
+cost_basis: per-seat
+integrations:
+  - REST API
+  - Webhooks
+admin: Director
+notes: >
+  Operational datastore for the tool-request workflow (request records, pipeline
+  state, gate decisions, audit log) — NOT the capability registry (that stays
+  GitHub-YAML). Status 'Planned': this role is pending Director confirmation before
+  building against it. data_cleared_for is provisional (Internal) pending a
+  data-governance sign-off on what sensitivity tiers it may hold.
